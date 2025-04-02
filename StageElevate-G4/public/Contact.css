@@ -1,0 +1,122 @@
+/* =============================== 
+   Style général pour la page Contact
+   =============================== */
+
+/* Fond général de la page */
+body {
+    background-color: #f4f4f4; /* Fond léger pour l'ensemble de la page */
+    font-family: Arial, sans-serif; /* Police générale */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Section principale du formulaire */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: calc(100vh - 120px);
+  }
+  
+  /* Conteneur de la section */
+  section {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Titre de la page */
+  h1 {
+    color: #ff6600;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Paragraphe */
+  p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Lien du mail */
+  a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #e65c00;
+  }
+  
+  /* =============================== 
+     Style du formulaire
+     =============================== */
+  
+  /* Formulaire de contact */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Champ de saisie */
+  label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Champs de saisie */
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus sur les champs */
+  input:focus, textarea:focus {
+    border-color: #ff6600;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* =============================== 
+     Boutons côte à côte
+     =============================== */
+
+
+/* Style du bouton */
+button.postuler {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 48%; /* Assure que chaque bouton occupe 48% de la largeur */
+}
+
+button.postuler:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px); /* Animation pour l'effet de surélévation */
+}
