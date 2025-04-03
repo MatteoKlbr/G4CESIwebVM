@@ -1,0 +1,149 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section de l'en-tête */
+h1 {
+    font-size: 2.8em;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Conteneur des cartes d'offres */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style des cartes d'offres */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    border: 1px solid #ecf0f1;
+}
+
+/* Effet au survol de la carte */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenu de la carte */
+.card-body {
+    padding: 20px;
+}
+
+/* Titre de l'offre */
+.card-title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Texte principal de l'offre */
+.card-text {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* Bouton Postuler */
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Bouton Ajouter à la wishlist */
+.btn-secondary {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Style pour message d'absence d'offres */
+.text-center {
+    font-size: 1.2em;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+}
+ 
+    .pagination .page-item {
+        margin: 0 5px;
+    }
+ 
+    .pagination .page-link {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #cc5500; /* Orange plus foncé */
+    }
+ 
+    .pagination .page-item.active .page-link {
+        background-color: #cc5500; /* Orange plus foncé */
+        color: #ffffff; /* Blanc */
+        font-weight: bold;
+        text-decoration: none;
+    }

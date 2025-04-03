@@ -1,0 +1,86 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centrage et style du contenu */
+  main {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre centré */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style du paragraphe */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Liens */
+  a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    color: #444;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Champs de texte */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Boutons */
+  .postuler {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .postuler:hover {
+    background-color: #e65c00;
+  }
+  
