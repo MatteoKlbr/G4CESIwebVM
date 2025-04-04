@@ -1,0 +1,155 @@
+/* login.css */
+
+/* =============================== 
+   Section générale de la page
+   =============================== */
+
+/* Fond général de la page */
+body {
+  background-color: #f4f4f4; /* Fond léger pour l'ensemble de la page */
+  font-family: Arial, sans-serif; /* Police générale */
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal centré pour la connexion */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Ajuste selon la hauteur de ton header+footer */
+  padding: 20px;
+}
+
+/* =============================== 
+   Section Accueil (home)
+   =============================== */
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff6600;
+  font-size: 2rem; /* Taille plus modérée */
+  font-weight: 600; /* Moins gras, juste assez pour du contraste */
+  letter-spacing: 0.5px; /* Espacement léger entre les lettres */
+  margin-bottom: 20px; /* Espace sous le titre */
+  text-transform: capitalize; /* Chaque mot commence par une majuscule */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  font-family: 'Roboto', sans-serif; /* Police moderne et simple */
+  line-height: 1.3; /* Espacement aéré */
+}
+
+/* =============================== 
+   Formulaire de connexion
+   =============================== */
+
+.login-container {
+  max-width: 500px;
+  background: white;
+  margin: 50px auto;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce pour le conteneur */
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol du conteneur */
+.login-container:hover {
+  transform: translateY(-5px); /* Légère animation pour un effet de surélévation */
+}
+
+form {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol du formulaire */
+form:hover {
+  transform: translateY(-5px); /* Légère animation pour un effet de surélévation */
+}
+
+/* =============================== 
+   Champs du formulaire
+   =============================== */
+
+/* Groupe de champs (label + input) */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Champs de saisie */
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+/* Focus sur les champs de saisie */
+.form-group input:focus {
+  border-color: #ff6600;
+  background-color: #fff;
+  outline: none;
+}
+
+/* =============================== 
+   Bouton de connexion
+   =============================== */
+
+.btnn {
+  display: block;
+  width: 100%;
+  background: #ff6600;
+  color: white;
+  padding: 14px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+/* Effet de survol du bouton */
+.btnn:hover {
+  background: #e65c00;
+  transform: translateY(-2px); /* Animation pour l'effet de surélévation */
+}
+
+/* =============================== 
+   Message d'erreur
+   =============================== */
+
+p.error {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+}

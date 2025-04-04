@@ -1,0 +1,118 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section de l'en-tête */
+h1 {
+    font-size: 2.8em;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Style de l'évaluation */
+.etoiles {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600; /* Couleur principale */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Style des étoiles */
+  .etoiles span {
+    font-size: 20px;
+  }
+  
+p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Conteneur des entreprises */
+.entreprises-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style des éléments des entreprises */
+.entreprise-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ecf0f1;
+}
+
+.entreprise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Nom de l'entreprise */
+.entreprise-item strong {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Description de l'entreprise */
+.entreprise-item p {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Ajouter une ligne pour séparer chaque entreprise */
+.entreprise-item + .entreprise-item {
+    border-top: 1px solid #ecf0f1;
+}
+
+/* Style pour message d'absence d'entreprises */
+p.text-center {
+    font-size: 1.2em;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .entreprise-item {
+        padding: 15px;
+    }
+
+    .entreprises-container {
+        grid-template-columns: 1fr;
+    }
+}

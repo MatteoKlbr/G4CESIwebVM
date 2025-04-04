@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: #f3f3f3;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  /* Ajuste cette valeur si besoin */
+  min-height: 100vh;
+}
+
+/* ------------ Header ------------ */
+header {
+  background: #ff6600;
+  color: white;
+  padding: 20px 50px; /* Ajuste le padding pour créer de l'espace sur les bords */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Liens de navigation à gauche */
+.nav-left {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-left a:hover {
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Boutons d'authentification à droite */
+.nav-right {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Pousse la section entièrement à droite */
+}
+
+.nav-right a,
+.nav-right button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-right a:hover,
+.nav-right button:hover {
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Surcharge éventuelle pour les boutons Bootstrap */
+.btn.btn-primary {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn.btn-primary:hover {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em;
+    /* Optionnel : ajouter une ombre pour mieux le distinguer */
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.5);
+}
+.bg-orange {
+  background-color: #ff6600;
+}
+.navbar-toggler {
+  margin-left: 12px; /* Décalage léger vers la droite */
+}
+
+
+.navbar-nav .nav-link:hover {
+  background-color: white;
+  color: #ff6600 !important;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-light:hover {
+  background-color: #ff6600;
+  color: white;
+}
