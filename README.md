@@ -51,6 +51,8 @@ Idem pour le rôle pilote, il sera redirigé vers un panel avec plus de restrict
 
 /admin_panel.php permet la redirection d'un admin après la connection
 
+En vous souhaitant une bonne découverte du projet de notre côté !
+
 Signé Groupe G4 CESI 2025 aka WEB4ALLG4 aka StageElevate .
 
 MK
