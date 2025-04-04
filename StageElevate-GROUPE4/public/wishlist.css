@@ -1,0 +1,94 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #ff6600;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Section principale */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres des offres */
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Contenu des offres */
+p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Article des offres */
+.wishlist-offer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol de l'offre */
+.wishlist-offer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+a.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+a.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour le message de vide */
+.text-center {
+    font-size: 1.2em;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive pour les écrans plus petits */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .wishlist-offer {
+        margin-bottom: 20px;
+    }
+
+    a.btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}

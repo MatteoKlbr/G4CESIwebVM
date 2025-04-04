@@ -1,0 +1,93 @@
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Conteneur principal centré et élégant */
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Titre de la page */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+/* Mise en forme du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Champs de saisie et textarea */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Focus sur les champs */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Redimensionnement du textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Bouton de soumission */
+button.btn {
+    margin-top: 20px;
+    padding: 12px;
+    background: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Hover sur le bouton */
+button.btn:hover {
+    background: #0056b3;
+}

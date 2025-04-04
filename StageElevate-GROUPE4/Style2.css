@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===================================
+   Reset & Global Styles
+=================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url("https://f.hellowork.com/seo/domaine/communication.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* ===================================
+   Header
+=================================== */
+header {
+  background: green; /* Changement de couleur */
+  color: white;
+  padding: 20px 50px; /* Augmentez ce padding pour pousser les contenus vers les bords */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  color: green; /* Changement de couleur */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #ff6600; /* Texte transparent pour afficher le fond du dégradé */
+  
+}
+
+h1:hover {
+  color: #ff6600;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: green; /* Changement de couleur */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-weight: 700;
+  padding: 10px;
+  color: green; /* Texte transparent pour afficher le fond du dégradé */
+  
+}
+
+h2:hover {
+  color: #ff6600;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminbuttons a {
+  border: 2px solid white; /* Cadre vert */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.adminbuttons a:hover {
+  border-color: #ff6600; /* Changer la couleur du cadre au survol */
+}
+
+/* Surcharge pour les boutons Bootstrap personnalisés */
+.btn.btn-primary {
+  background-color: green; /* Changement de couleur */
+  border-color: green;
+}
+
+/* ===================================
+   Main Content
+=================================== */
+main {
+  max-width: 1200px;
+  margin: 140px auto 0px; /* Ajustez le margin-top selon la hauteur de votre header */
+  padding: 20px;
+  padding-bottom: 70px; /* Ajout d'un espace en bas pour le footer */
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: green; /* Changement de couleur */
+}
+
+/* ===================================
+   Tableaux
+=================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background: #ff6600;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* ===================================
+   Boutons & Actions
+=================================== */
+/* Boutons d'action simples */
+a.btn-modifier {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: green; /* Changement de couleur */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+a.btn-modifier:hover {
+  background-color: green;
+}
+
+button.btn-supprimer {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #c82333; /* bleu */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+button.btn-supprimer:hover {
+  background-color: #c82333;
+}
+
+/* ===================================
+   Statistiques
+=================================== */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stat {
+  background: green; /* Changement de couleur */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.stat p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Navigation admin */
+.nav-admin {
+    display: flex;
+    align-items: center;
+    /* Par défaut, les items s'alignent au début */
+  }
+  
+  .nav-admin a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .nav-admin a:hover {
+    background-color: #ff6600;
+  }
+  
+  /* Pousser la zone d'authentification à droite */
+  .nav-admin .auth-buttons {
+    margin-left: auto;
+  }
+  
+  .nav-admin .auth-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-admin .auth-buttons a:hover {
+    background-color: #ff6600;
+  }
+
+/* ===================================
+   Footer
+=================================== */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: green; /* Changement de couleur */
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em;
+    /* Optionnel : ajouter une ombre pour mieux le distinguer */
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.5);
+}
+.navbar-brand {
+    font-size: 1.3rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: white;
+    color: #ff6600 !important;
+    border-radius: 5px;
+  }
+  
+  .navbar-toggler {
+    margin-left: 10px; /* Léger décalage à droite */
+  }
+
+@media screen and (max-width: 768px) {
+    main {
+      margin: 100px 10px 40px;
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 0.85em;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .stat {
+      width: 80%;
+    }
+  
+    .section-title {
+      font-size: 1.4em;
+    }
+  
+    .action-btn {
+      padding: 6px 10px;
+      font-size: 0.85em;
+    }
+    
+  }
+
+@media (max-width: 992px) {
+    .collapse.navbar-collapse {
+      background-color: green; /* Changement de couleur */
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 8px 10px;
+      font-size: 0.95em;
+      text-align: left;
+    }
+  
+    .row {
+      margin: 0;
+    }
+  
+    .col-6 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+/* ===== Formulaire d'inscription stylé ===== */
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  text-align: center;
+  color: green; /* Changement de couleur */
+  margin-bottom: 20px;
+}
+
+form .form-group {
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  background-color: green; /* Changement de couleur */
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: green;
+}
+
+header, .navbar, .navbar-nav, .navbar-brand, .navbar-toggler {
+  background-color: green !important; /* Applique la couleur verte */
+  border: none !important; /* Supprime toute bordure (si présente) */
+}
