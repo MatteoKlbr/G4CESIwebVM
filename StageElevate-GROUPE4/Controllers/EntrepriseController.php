@@ -2,7 +2,7 @@
 // EntrepriseController.php
 namespace Controllers;
 require_once __DIR__ . '/../Config/config.php';   // Fichier qui définit $pdo
-require_once 'models/EntrepriseModel.php';
+require_once __DIR__ . '/../models/EntrepriseModel.php';
 
 use Models\EntrepriseModel;
 
@@ -50,7 +50,7 @@ class EntrepriseController {
             }
 
             if ($this->model->createEntreprise($nom, $description, $email, $telephone)) {
-                header("Location: manage_entreprises.php");
+                header("Location: ../edit_entreprise.php");
                 exit;
             } else {
                 $_SESSION['create_entreprise_error'] = "Erreur lors de la création de l'entreprise.";

@@ -20,8 +20,8 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
     exit;
 }
 $user_id = $_GET['id'];
-require_once __DIR__ . '../Config/config.php';
-require_once __DIR__ . '../models/User.php';
+require_once __DIR__ . '/Config/config.php';
+require_once __DIR__ . '/models/User.php';
 
 
 $userModel = new User($pdo);

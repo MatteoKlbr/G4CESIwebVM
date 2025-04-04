@@ -11,12 +11,12 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 // Définir l'URL de base de ton site
-$baseUrl = 'http://localhost/LeBonPlan-G4/LeBonPlan-G4/';
+$baseUrl = 'http://168.63.6.6/';
 // Connexion PDO à la base de données
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'stage_db'); // Adaptez selon votre base
-define('DB_USER', 'root');     // Adaptez selon votre configuration
-define('DB_PASS', '');  // Adaptez selon votre configuration
+define('DB_USER', 'hedi-rihani');     // Adaptez selon votre configuration
+define('DB_PASS', 'G4@CESIweb');  // Adaptez selon votre configuration
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Bomou Mahamadou">
+  <meta name="author" content="G4">
   <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
   <title>Administrateur - StageElevate</title>
 

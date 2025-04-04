@@ -16,7 +16,7 @@
             unset($_SESSION['create_entreprise_error']);
         }
         ?>
-        <form action="create_entreprise_process.php" method="post">
+        <form action="/process/create_entreprise_process.php" method="post">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required>
             <br>

@@ -9,7 +9,7 @@ if (!isset($_SESSION['id'])) {
 /////////////////////////////////////////
 // Inclusion de la configuration et des modèles
 require_once '../Config/config.php';
-require_once '../models/Candidature.php';
+require_once '../models/candidature.php';
 require_once '../models/User.php';
 
 // Récupérer les informations de l'utilisateur (pour accéder à son CV existant)

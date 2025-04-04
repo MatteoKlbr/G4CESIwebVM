@@ -5,7 +5,7 @@ if (!isset($_SESSION['id'])) {
     exit;
 }
 
-require_once __DIR__ . '../Controllers/PiloteController.php';
+require_once __DIR__ . '/Controllers/PiloteController.php';
 use Pilote\PiloteController;
 
 $section = $_GET['section'] ?? 'dashboard';

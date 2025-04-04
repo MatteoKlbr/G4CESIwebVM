@@ -4,7 +4,7 @@ require_once __DIR__ . '/../Config/config.php'; // ajuste le chemin si besoin
 
 // Vérification des données envoyées et de la session utilisateur
 if (!isset($_POST['entreprise_id'], $_POST['evaluation'], $_SESSION['id'])) {
-    header('Location: entreprise.php');
+    header('Location: Entreprise.php');
     exit;
 }
 
@@ -32,5 +32,5 @@ $stmtInsert = $pdo->prepare($sqlInsert);
 $stmtInsert->execute([$entreprise_id, $user_id, $evaluation]);
 
 // Redirection après l'évaluation
-header('Location: entreprise.php');
+header('Location: Entreprise.php');
 exit;

@@ -1,11 +1,11 @@
 <?php
 session_start();
 $redirectPanel = ($_SESSION['role'] === 'admin') ? 'admin_panel.php' : 'pilote_panel.php';
-require_once __DIR__ . '../Config/config.php';   // Fichier qui définit $pdo
+require_once __DIR__ . '/Config/config.php';   // Fichier qui définit $pdo
 
 $id = $_GET['id'] ?? null;
 if (!$id) {
-    header("Location: ../{$redirectPanel}");
+    header("Location: /{$redirectPanel}");
     exit;
 }
 

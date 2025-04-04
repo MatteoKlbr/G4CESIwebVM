@@ -5,7 +5,7 @@ if (!isset($_SESSION['id'])) {
     exit;
 }
 
-require_once __DIR__ . '../Controllers/AdminController.php';
+require_once __DIR__ . '/Controllers/AdminController.php';
 use Admin\AdminController;
 
 $section = $_GET['section'] ?? 'dashboard';
@@ -70,7 +70,7 @@ switch ($section) {
     case 'offres':
         echo '<h1 class="section-title">Gestion des Offres</h1>';
         // Ajoute un lien pour créer une offre
-        echo '<div style="text-align:center;"><a href="create_offre.php" style="display:inline-block; padding:10px 15px; background-color:green; color:white; text-decoration:none; border-radius:4px; font-weight:bold;">Ajouter un Offre</a></div>';
+        echo '<div style="text-align:center;"><a href="create_offre.php" style="display:inline-block; padding:10px 15px; background-color:green; color:white; text-decoration:none; border-radius:4px; font-weight:bold;">Ajouter une Offre</a></div>';
         $offres = $adminController->getOffres();
         if ($offres) {
             echo '<table>';

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '../Config/config.php';
+require_once __DIR__ . '/Config/config.php';
 
 $entreprises = $pdo->query("SELECT id, nom FROM entreprises ORDER BY nom ASC")->fetchAll(PDO::FETCH_ASSOC);
 ?>
